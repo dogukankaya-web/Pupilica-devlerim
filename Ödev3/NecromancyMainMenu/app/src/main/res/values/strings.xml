@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NecromancyMainMenu</string>
+    <string name="baslik">WELCOME TO NECROMANCY</string>
+    <string name="boyunBul">Find Neck</string>
+    <string name="dahaFazlaBoyunBul">Find More Neck</string>
+    <string name="romance">Romance</string>
+    <string name="aciklama">It was never about dead or sorcery.</string>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stone"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/stone"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/metal_mania"
+            android:text="@string/baslik"
+            android:textAlignment="center"
+            android:textColor="@color/bloodRed"
+            android:textSize="60sp"
+            tools:layout_editor_absoluteX="53dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="193dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/skull" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/boyunBul"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="28sp"
+        app:chipBackgroundColor="@color/bloodRed"
+        app:chipStrokeColor="@color/bloodRed"
+        app:layout_constraintEnd_toStartOf="@+id/chip3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/romance"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="28sp"
+        app:chipBackgroundColor="@color/bloodRed"
+        app:chipStrokeColor="@color/bloodRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/dahaFazlaBoyunBul"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="28sp"
+        app:chipBackgroundColor="@color/bloodRed"
+        app:chipStrokeColor="@color/bloodRed"
+        app:layout_constraintEnd_toStartOf="@+id/chip2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/aciklama"
+        android:textColor="@color/blueFire"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/blueFire"
+        android:textColor="@color/black"
+        app:icon="@drawable/mini_skull"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/blueFire"
+        android:textColor="@color/black"
+        app:icon="@drawable/heart"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

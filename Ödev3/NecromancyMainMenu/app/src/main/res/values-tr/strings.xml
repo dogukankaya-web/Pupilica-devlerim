@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NecromancyMainMenu</string>
+    <string name="baslik">NECROMANCY YE HOŞGELDİN</string>
+    <string name="boyunBul">Boyun bul</string>
+    <string name="dahaFazlaBoyunBul">Daha fazla boyun bul</string>
+    <string name="romance">Romance</string>
+    <string name="aciklama">Hiçbir zaman ölüler yada büyücülükle alakalı değildi.</string>
+
+</resources>
