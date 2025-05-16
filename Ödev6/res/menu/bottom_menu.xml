@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/main_icon"
+        android:title="Home" />
+    <item
+        android:icon="@drawable/search_icon"
+        android:title="Search" />
+    <item
+        android:icon="@drawable/download_icon"
+        android:title="Download" />
+    <item
+        android:icon="@drawable/prophile_icon"
+        android:title="Prophile" />
+</menu>

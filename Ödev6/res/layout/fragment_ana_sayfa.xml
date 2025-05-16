@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_disney_background"
+    tools:context=".AnaSayfaFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainListrv"
+        android:layout_width="0dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="40dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:src="@drawable/disney_ana_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/konularrv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainListrv" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/konularrv"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainListrv">
+
+        <ImageView
+            android:id="@+id/disneyimageView"
+            android:layout_width="66dp"
+            android:layout_height="74dp"
+            android:background="@color/light_disney_background"
+            android:src="@drawable/disney_buton_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/konularrv"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/mainListrv">
+
+        <ImageView
+            android:id="@+id/pixarimageView"
+            android:layout_width="66dp"
+            android:layout_height="74dp"
+            android:background="@color/light_disney_background"
+            android:src="@drawable/pixar_buton_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/konularrv"
+        app:layout_constraintEnd_toStartOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/mainListrv">
+
+        <ImageView
+            android:id="@+id/marvelimageView"
+            android:layout_width="66dp"
+            android:layout_height="74dp"
+            android:background="@color/light_disney_background"
+            android:src="@drawable/marvel_buton_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/konularrv"
+        app:layout_constraintEnd_toStartOf="@+id/cardView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/mainListrv">
+
+        <ImageView
+            android:id="@+id/starwarsimageView"
+            android:layout_width="66dp"
+            android:layout_height="74dp"
+            android:background="@color/light_disney_background"
+            android:src="@drawable/starwars_buton_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/konularrv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/mainListrv">
+
+        <ImageView
+            android:id="@+id/natgeoimageView"
+            android:layout_width="66dp"
+            android:layout_height="74dp"
+            android:background="@color/light_disney_background"
+            android:src="@drawable/nationalgeographic_buton_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/connect_icon"
+        app:layout_constraintBottom_toTopOf="@+id/mainListrv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
