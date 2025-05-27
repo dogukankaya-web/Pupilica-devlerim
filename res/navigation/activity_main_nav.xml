@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.example.pupilicabitirmeprojesi.ui.fragment.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/ana_to_sepet"
+            app:destination="@id/sepetFragment" />
+        <action
+            android:id="@+id/ana_to_detay"
+            app:destination="@id/detayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.example.pupilicabitirmeprojesi.ui.fragment.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" >
+        <action
+            android:id="@+id/detay_to_ana"
+            app:destination="@id/anaSayfaFragment" />
+        <argument
+            android:name="yemek"
+            app:argType="com.example.pupilicabitirmeprojesi.data.entity.Yemekler" />
+        <action
+            android:id="@+id/detay_to_sepet"
+            app:destination="@id/sepetFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/gecmisFragment"
+        android:name="com.example.pupilicabitirmeprojesi.ui.fragment.GecmisFragment"
+        android:label="fragment_gecmis"
+        tools:layout="@layout/fragment_gecmis" >
+        <action
+            android:id="@+id/gecmis_to_ana"
+            app:destination="@id/anaSayfaFragment" />
+        <argument
+            android:name="gecmisYemekListesi"
+            app:argType="com.example.pupilicabitirmeprojesi.data.entity.GecmisYemekler[]"
+            app:nullable="false" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.example.pupilicabitirmeprojesi.ui.fragment.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" >
+        <action
+            android:id="@+id/sepet_to_detay"
+            app:destination="@id/detayFragment" />
+        <action
+            android:id="@+id/sepet_to_Ana"
+            app:destination="@id/anaSayfaFragment" />
+        <argument android:name="sepettekiYemek"
+            app:argType="com.example.pupilicabitirmeprojesi.data.entity.SepettekiYemekler" />
+        <action
+            android:id="@+id/sepet_to_gecmis"
+            app:destination="@id/gecmisFragment" />
+
+
+    </fragment>
+</navigation>

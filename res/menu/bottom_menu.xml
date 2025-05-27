@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/anaSayfaFragment"
+        android:icon="@drawable/icons_restaurant"
+        android:title="Ana Sayfa" />
+    <item
+        android:id="@+id/gecmisFragment"
+        android:icon="@drawable/icons_rollback"
+        android:title="Geçmiş" />
+    <item
+        android:id="@+id/sepetFragment"
+        android:icon="@drawable/icons_basket"
+        android:title="Sepet" />
+</menu>
