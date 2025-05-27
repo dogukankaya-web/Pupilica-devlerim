@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">PupilicaBitirmeProjesi</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="gecmis_sil_onay_mesaji">"%1$s adlı siparişi silmek istediğinize emin misiniz?"</string>
-    <string name="evet">Evet</string>
-</resources>
